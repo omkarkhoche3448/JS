@@ -10,50 +10,60 @@
 </head>
 
 <body>
+    <!--MAIN SECTION-->
     <div class=" w-[100vw] h-[100vh] flex justify-center items-center overflow-hidden relative bg-black">
+        <!-- Circular elements -->
         <div class="circle1 hidden md:block lg:block"></div>
         <div class="circle2  hidden md:block lg:block"></div>
+        <!-- Content section -->
         <div
             class=" h-[450px] items-center justify-evenly px-5 py-12 border-[2px] border-[#ffffff30] flex flex-col bg-[#ffffff1a] rounded-md">
             <img src="./IMG_2858~2-modified.png" alt="" class=" w-[140px] h-[140px]">
             <h2 class=" text-[#ffffffb9] text-[1.7rem] items-center uppercase">Omkar Khoche</h2>
             <h3 class=" text-[#ffffffb9] text-[1.2rem] items-center">Web Devloper,Pune</h3>
+            <!-- Buttons section -->
             <div class="flex flex-row gap-3">
+                <!-- Button to open the modal -->
                 <button onclick="openModal()"
                     class=" flex items-center gap-2 capitalize cursor-pointer px-2 py-3 text-[#ffffffb9] border-[2px] border-[ #ffffffb9] rounded-[4px] bg-[#ffffff00] hover:bg-[#ffffffb9] hover:text-[#131313] transition-all duration-200 "><i
                         class="fa-solid fa-share"></i>Share My
                     Profile</button>
+                <!-- Button with a link to follow the profile -->
                 <button
                     class="w-[150px] cursor-pointer capitalize px-2 py-3 text-[#ffffffb9] border-[2px] border-[ #ffffffb9] rounded-[4px] bg-[#ffffff00]  hover:bg-[#ffffffb9] hover:text-[#131313] transition-all duration-200"><a
                         href="" class=" no-underline ">Follow Me</a></button>
             </div>
         </div>
-
-        <div
-            class=" modal w-[500px] bg-[#a29e9e88] px-5 py-6 z-10 scale-0 translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] text-white fixed item-center border-[2px] border-[#ffffff59]  ">
-            <div class="flex flex-row space-x-4 items-center mt-6 pb-3 border-[1px] border-[#ffffff88]">
-                <h1 class="text-[30px] cursor-pointer">Share My Profile</h1>
+    </div>
+    <!-- Modal Component  -->
+    <div class="modal">
+        <div class="modalHeader">
+            <!-- Title for sharing profile -->
+            <h1>Share My Profile</h1>
+            <div>
                 <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
             </div>
-            <div>
-                <h3>Shere This Via</h3>
-                <div class="mt-[20px] flex space-x-4 items-center flex-wrap">
-                    <a href="https://www.facebook.com/priyansh.patel.94651" class="icon" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/priyansh79" class="icon" id="twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/_p_r_i_y_a_n_s_h/" class="icon" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="https://web.telegram.org/z/" class="icon" id="telegram">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
-                </div>
+        </div>
+        <!-- Share options -->
+        <div>
+            <h3>Share this via</h3>
+            <!-- Share options with respective icons -->
+            <div class="iconContainer">
+                <a href="https://www.facebook.com/priyansh.patel.94651" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/priyansh79" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/_p_r_i_y_a_n_s_h/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://web.telegram.org/z/" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
             </div>
         </div>
     </div>
